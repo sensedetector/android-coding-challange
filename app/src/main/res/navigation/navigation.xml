@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/shiftListFragment">
+
+    <fragment
+        android:id="@+id/shiftListFragment"
+        android:name="com.shiftkey.codingchallenge.presentation.ShiftListFragment"
+        android:label="ShiftListFragment" >
+        <action
+            android:id="@+id/action_shiftListFragment_to_shiftDetailFragment"
+            app:destination="@id/shiftDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shiftDetailFragment"
+        android:name="com.shiftkey.codingchallenge.presentation.ShiftDetailFragment"
+        android:label="ShiftDetailFragment" />
+</navigation>
